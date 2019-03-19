@@ -1,0 +1,240 @@
+https://github.com/vimleshtech/dotnet-learning.git
+========================================================
+
+Today's Topics
+=====================
+-.Net Framework
+-Components, Languages, and Applications
+-Console Application and it's Structure 
+-Variable and datatype
+-Operator
+-Condition 
+-Input and Output 
+
+
+
+.Net Framework
+=========================
+.net: is framework and plateform which provides multiple langauages to develop different types of applications
+
+Langauages:
+		c#.net
+		vb.net
+		vc++
+		web
+		------
+		js(javascript)
+		html
+		
+Applications:
+	-Console Application
+	-Windows Forms 
+	-Web Applications
+		-ASP
+		-MVC
+	-WCF
+	-Web Services
+	-Class Library 
+	-Mobile App 
+	etc.
+	
+
+.net version
+=====================================
+VisualStudio(IDE : Integrated Development Environment)		.Net Framework
+-----------------------------------------------------		--------------
+VisualStudio (VS 2002)						 1.0
+VisualStudio (VS 2003)						 1.1
+VisualStudio (VS 2005)						 2.0
+VisualStudio (VS 2008)						 3.5
+VisualStudio (VS 2010)						 4.0	-
+VisualStudio (VS 2013)						 4.5
+VisualStudio (VS 2015)						 4.5.1	---    
+VisualStudio (VS 2017)						 4.7.2	--
+	       	
+	 
+
+Components, Languages, and Applications
+==================================================
+CLS: Common language specification 		
+CTS: Common type system 			
+MSIL Microsort intermediate language 
+CLR: Common language runtime
+JIT: Just in time which is interpreter 
+Assembly: meta data (data about data) / Library 
+
+
+Source code -> Compile -> MSIL  -> Interpreter -> Nativeode/MachineCode
+
+
+
+Console Application and it's Structure 
+=============================================
+Console Application: Application which can run without internet connection on OS , there is no UI(User interface)
+	Example:
+		MS DOS 
+	
+it's Structure 
+------------------------
+Solution(.sln):	is collection of applications/we can create multiple application/project in one solution
+	Project_Calc
+
+
+	
+	Project_Tax	
+
+
+	Project_Sales
+
+
+	
+Example:
+HDFC(hdbc.sln)
+	OnlineBanking	(.csproj)
+		Assemblies
+				-metadata : data about data 
+		References
+				-library
+
+		Program.cs	-is class file where we can write the source code		
+			...     cs: c shrap / c#
+			...
+
+
+		App.config	-Configuration file (db connection , smtp, credentials)		
+				
+		
+	ATM
+
+
+	BanchBanking
+
+
+	..
+	...
+
+
+Keyword/Reserved Words
+======================================
+-namespace 	: is collection of classes (multiple class can be part of one namespace)	
+-class		: is wrapper of data member and function/method (example: class employee)
+-using		: is keyword which load the namespace or library 	
+-public		: is access specifier / global access 
+
+-private	: is access specifier / within class 
+-internal	: is access specifier / within namespace
+-protected	: is access specifier / within same class and in child class 
+-void		: is return type , which will return nothing 
+-static		: 	-single memory allocation , 
+			-method,and function can be access without object
+-Main		: is reserved / startup function 
+-string		: is data type for alpha numeric 
+-int		: is data type for numeric without decimal
+-double		: is data type for neumeric with decimal 			
+-if		: is conditional statement 
+-else		: is false part of if condition 
+-while		: is iterator or loop 
+-for		: is iterator or loop 
+etc.
+
+	
+Variable and datatype
+===========================
+Variable: is temp. memory where data can be stored 
+Example:
+		int a =11; //here a is variable 
+
+		Correct syntax:
+			int a;
+			int roll_no;
+			int num10;
+
+			String f_name;
+			string _lname;
+			
+		Incorrect syntax:
+			int 1a;
+			string 1name;
+			string f name;
+			int a+b;
+			
+Data Type:
+----------------------
+numeric without decimal
+--------------------------
+byte		: 1 byte	= 8 bit 
+short		: 2 byte	= 16 bit
+int		: 4 byte	= 32 bit
+long		: 8 byte	= 64 bit
+
+numeric with decimal
+--------------------------
+float		: 4 byte	= 32 bit
+double		: 8 byte	= 64 bit
+
+
+bit
+------------------
+boolean		: 1 byte
+
+alhpa numeric
+------------------------
+char		: 'a'  '1' '$'
+string		: dynamic    = "skhss jsh11234 44"
+				
+
+Operator
+====================
+Arithmetic:
+	+
+	-
+	*
+	/
+	%		
+
+Conditional:
+	>
+	>=
+	<
+	<=
+	==
+	!=
+Logical:
+	&&	-and
+	||	-or
+
+Increment/Decrement
+	++		: incremnet
+	--		: decrement
+
+	postfix:
+		i++
+		i--
+
+	prefix:
+		++i
+		--i
+
+	
+Condition  : is decision making statement
+==================
+-if condition 
+-if else condition
+-if else if else if else / ladder if else
+-nested if else / if inside if codition 
+-switch case 
+
+
+Input and Output 
+=========================
+--input
+Console.readLine()		--read data from console or user
+
+--output
+Console.writeLine("message..")	--print/show to user 
+
+
+
+	
+
+
