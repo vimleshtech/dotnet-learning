@@ -1,0 +1,202 @@
+https://github.com/vimleshtech/dotnet-learning.git
+========================================================
+
+Today's Topics
+=====================
+-Condition 
+-Input and Output 
+-Loop and it's Type
+-Array 
+
+
+Condition : is decision making statement 
+============================================
+There are following types:
+	i. if condition
+		a. if condition
+			Example:
+			if (condition)
+			{
+			
+			}
+		b. if else condition 	
+			Example:
+			if (condition)
+			{
+			
+			}
+			else{
+
+
+			}
+		c. if else if else if else / ladder if else 
+			Example:
+			if(condition)
+			{
+
+
+			}
+			else if(condition)
+			{
+
+
+			}
+				....
+			else{
+
+
+			}
+		d. nested if else / if inside if condition 		
+			Example:
+			if(condition)
+			{
+				if(condition)
+				{
+
+
+				}
+				else
+				{
+
+				}
+
+			}
+			else
+			{
+
+
+			}
+	ii. switch case
+		Example:
+		switch(key)
+		{
+			case 1:
+					break;
+			case 2:
+					break;			
+			default:
+			
+					break;
+
+		}
+
+Input and Output 
+==========================
+Input: take an input from user/console 
+Note : default input type is string , so we need type cast in other type if required
+	Example:
+		Console.read()			: read single char
+		Console.readLine()		: read sentence/line(till enter)
+
+
+		
+Output: show result/print result to user/console
+	Example:
+		Console.write("message...")	: print and don't change line
+
+		Console.writeLine("message..")	: print and new line 
+
+
+Example:
+	Q. wap to take input from user and show sum of all numbers
+	
+	Console.writeLine("enter data : ");
+	int a = Console.readLine();  //error of type casting
+	int a = Convert.ToInt32(Console.readLine()) ;  //correct 
+
+	Console.writeLine("enter data : ");
+	
+	int b = Convert.ToInt32(Console.readLine()) ;  //correct 
+
+	int c = a+b;
+	Console.writeLine("output is :"+c);
+	
+
+
+	Console.writeLine("enter data :")	
+	string name = Console.readLine();//default type is string 
+
+========================
+Loop and it's Type
+========================
+Loop: is iterator which repeat the statement or commands 
+Example:
+	1 2 ...10
+Fundamental of loop:
+	-init	/ start from 	:	1
+	-condition/limit	:	10	
+	-increment/decrement	: 	+1
+
+There are following types of loop:
+	-while
+		Example:
+		int i=1; //init
+		while(i<=10) //condition
+		{
+			//statement
+			i++;	//increment
+
+		}
+	-for
+		Example:
+		for(int i=1; i<=10; i++)
+		{
+			//statement
+
+		}
+
+	
+	-do while	: will execute at least one time 
+			: first execute then check the condition 
+		Example:
+		int i=1;
+		do{
+			//statement 
+			i++;	
+
+		}while(i<1);
+	-foreach / advance loop 
+		: will execute for every item/element in given list or array
+		: forward only 
+			
+		Example:
+		int[] a []= {11,222,333,44,555,333,1};
+
+
+		foreach(int t in a)
+		{
+
+
+		}
+		
+Array  : is collection of similar type data or values
+=======================================================
+There are following types of array:
+	-single dimenssion
+	Example:
+		int[] n = new int[3]; //here 3 is size of array
+		n[0] = 1;
+		-array index start from 0 index 
+		-last index will be length-1
+
+		or
+
+		int[] x = {11,22,3};
+		
+
+	-multiple dimenssion  / 2D / Tabular
+		String[,] data = new string[3][2];
+
+
+		or
+
+		int[,] d ={{1,2,3},{33,44,55},{11,2,3}};
+
+		
+		
+
+			
+
+		
+
+	
