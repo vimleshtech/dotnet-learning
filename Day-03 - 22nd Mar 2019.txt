@@ -1,0 +1,88 @@
+https://github.com/vimleshtech/dotnet-learning.git
+========================================================
+
+Today's Topics
+=====================
+-Function
+-String Handling
+
+
+Function:  is set of commands or statement which is resubale
+===============================================================
+Advantage of Functions:
+	-> Reusability of source code 
+	-> Support to modular programing, large code can be written in small set 
+	-> Easy to manage the source code
+
+There are following types of functions: 
+	->No argument and no return
+		Example:
+		void welcome(){   
+			//statement
+		}
+	->No argument with return 
+		Example:
+		int getData(){
+
+			return 0;
+		}
+	->Argument with no return
+		Example:
+		void add(int a, int b...){
+
+			//statement of addition and then print 
+		}
+		
+	->Argument with return 
+		Example:
+		int sub(int a, int b...){
+
+			return a-b;
+		}
+	
+
+String Handling/Functions
+=================================
+String Functions	Definitions
+---------------------------------------
+Clone()		: Make new copy/clone of string
+CompareTo()	: Compare two strings and returns integer value as output. It returns 		0 for true and 1 for false.
+Contains()	:The C# Contains method checks whether specified character or string 		is exists or not in the string value.
+EndsWith()	:This EndsWith Method checks whether specified character is the last 		character of string or not.
+Equals()	:The Equals Method in C# compares two string and returns Boolean value 		as output.
+GetHashCode()	:This method returns HashValue of specified string.
+GetType()	:It returns the System.Type of current instance.
+GetTypeCode()	:It returns the Stystem.TypeCode for class System.String.
+IndexOf()	:Returns the index position of first occurrence of specified 		character.
+ToLower()	:Converts String into lower case based on rules of the current 		culture.
+ToUpper()	:Converts String into Upper case based on rules of the current 		culture.
+Insert()	:Insert the string or character in the string at the specified 				position.
+IsNormalized()	:This method checks whether this string is in Unicode normalization 			form C.
+LastIndexOf()	:Returns the index position of last occurrence of specified character.
+Length		:It is a string property that returns length of string.
+Remove()	:This method deletes all the characters from beginning to specified 		index position.
+Replace()	:This method replaces the character.
+Split()		:This method splits the string based on specified value.
+		a ="this is c# code"
+		string[] d= a.split(' ');
+			d = {"This","is","c#","code"}
+		string[] d= a.split('');
+			d = {"T","h","i"....}
+
+
+
+StartsWith()	:It checks whether the first character of string is same as specified 		character.
+Substring()	:This method returns substring.
+		a ="raman sinha"
+		a.SubString(0,2)
+ToCharArray()	Converts string into char array.
+		char[] d= ToCharArray()
+			d = {'T','h','i'....}
+
+Trim()		:It removes extra whitespaces from beginning and ending of string.
+		a= "  this is c# code "
+		a.Trime()
+			="this is c$ code"
+
+		
+		
