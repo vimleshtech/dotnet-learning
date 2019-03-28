@@ -1,0 +1,119 @@
+Today's Topics
+=============================
+->OOPS Overview
+->Class
+->Object
+->Encapsulaiton 
+->Abstraction and Data Hiding
+	:Access specifier 
+->Constructor
+
+
+OOPS Overview
+==================
+OOPS : Object Oriented Programing System(Structure)
+Advantaage of OOPS:
+	-Support to modular programing, large task can be breakdown in small set 
+	-Reusability of source code 
+	-Easy to manage the source code 
+	-Loosly couple 
+	-OOPs on single responsibilites principle (every method should reposible to 		perform one type of task)
+
+There are following principals of OOPS:
+	-Class		: is wrapper of data member(attribute) and function/method  
+			Example: 
+			//class
+			class  Compute{
+
+				//data members 
+				int num1;
+				int num2;
+				int num;
+				string name;
+					
+				//methods 
+				void add(){
+
+				}
+				void sub(){
+
+				}		
+
+			}
+	-Object		: is an instance of class 
+			Example:
+			Compute c = new Compute();
+			
+			Compute : is name of the class
+			c  	: is an object of class
+			new 	: is keyword which allocates the memory
+			Compute(): call/invoke to constructor 
+
+			
+	-Encapsulation	: is wrapping of data member and method in a unit 
+			: every class is by default encapsulated 
+						
+
+	-Abstraction and data hiding: 
+			Abstraction: to expose the essential features of class and 			hide the implementaion/defintion of method/class i.e. called 			abstraction 
+			
+			Data Hiding:  access specifier 
+			
+			There are following keywords:
+			private			: within class 			
+			protected		: in same and child class
+			public			: anywhere 
+			internal 		: within namespace 
+			default/no keyword	: like private 
+			
+			
+			Example:
+			class Compute{
+
+				private int  num1;
+				public int num;
+
+				public void add(){
+
+				}		
+				pubic void setdata(int n){
+					num=n;
+					num1 =n;
+				}	
+
+			}
+
+			class Program
+			{
+
+				public static void Main(string[] a)
+				{
+					Compute c  =new Compute();
+
+					c.num =10;
+					c.num1 =1; //not allowed 
+
+
+					//or
+					c.setdata(10);
+				}
+
+			}
+
+	
+	-constructor		: is function which invokes or execute or call 						automatically when object will create of class 
+				-constructor is function which should be same name as 				name of class
+				-constructor cannot have return type
+				-constructor cannot called explicitly
+				-constructor will execute automatically when object 					will create
+				-constructor does initialization of memory 
+				-There are following types of constructor:
+				a. default / without argument
+				b. with argument/paramenter
+				c. copy constructor 
+ 				
+			
+	etc.	
+
+
+
