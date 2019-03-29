@@ -1,0 +1,164 @@
+-static and non-static
+-inheritence
+-polymorphsiam
+-abstract class
+-interface
+
+-static and non-static
+============================
+-static function/method and data member can be access without object
+-static allocates single memory 
+-we can also create static class, and static class will allow only static methods and data member
+Example 1:
+	class test{
+
+		public static int a;  //static member
+		public int b;		//non-static
+
+
+		public void method1()
+		{
+
+		}
+		public static void method2(){
+
+		}
+
+
+	}
+
+Access to function/method:
+	test.a =10;				
+	test.method2();		
+
+	test o = new test();	//create an object to access non-static member
+	o.b =111;
+	o.method1();
+
+Example 2:
+	static	class Example{
+		static int a;
+		//int b; //not allowed
+		public static void test()
+		{
+
+		}
+
+
+	}
+
+inheritence : to extend one class features to another class 
+================
+-Derived/child class object can access to parent class method and data member 
+
+Example:
+class A		//base or parent class
+{
+	protected int a;
+	public void test()
+	{
+
+	}
+
+}
+
+class B : A	//derived or child class
+{
+
+	public void test2(){
+
+	}
+
+}
+
+//create an object
+B o =new B();
+o.test();
+o.test2();
+
+
+There are following types of inhertence :
+i. single level
+	A -> B
+ii. multi level
+	A -> B -> C
+iii. tree / hirarchical 
+	A -> B, C, D -> M, N 
+
+iv. hybrid  (multiple types of inheritence in one project)
+	A -> B -> C
+	X-> Y,Z
+v. multiple : c# doesn't support this type 
+	A , B, C ... -> D
+
+
+polymorphsiam : poly means many and morphisam means forms 
+==================
+-> Multiple function can have same name but different works  i.e. called polymorphisam
+There are following types:
+i. overloading:
+	multiple function/method will have same name but different argument 
+	(no of argument or type of argument can be different)
+	example:
+	class test{
+
+
+		public void add(int a , int b)
+		{
+
+
+		}
+		public void add(int a, int b, int c)
+		{
+
+
+		}
+	}
+	class B: test{
+
+		public void add(double a, double b)
+		{
+
+
+		}
+	}
+//create object
+B o = new B();
+o.add(11,23);
+o.add(11.32,33.4);
+o.add(3,3,4)
+
+
+ii. overriding : multiple function will have same name and argument 
+example:
+class test{
+
+
+		public virtual void wel()
+		{
+			//hello
+
+		}
+	}
+	class B: test{
+
+		public override void wel()
+		{
+			//hi
+
+		}
+	}	
+ 
+//
+test t = new test();
+t.wel() //hello
+
+B b =new B();
+b.wel() //hi
+
+
+test oo = new B(); //object of parent and memory of child
+oo.wel() // hi 
+
+
+
